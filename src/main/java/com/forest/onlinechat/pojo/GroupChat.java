@@ -2,7 +2,7 @@ package com.forest.onlinechat.pojo;
 
 import lombok.Data;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Data
 public class GroupChat {
@@ -11,8 +11,8 @@ public class GroupChat {
     private String avatar;
     private String introduction;
     private String announcement;
-    private Date createdTime;
-    private Date updateTime;
+    private LocalDateTime createdTime;
+    private LocalDateTime updateTime;
     private Integer createdUser;
     private String createdUserName;
 }
