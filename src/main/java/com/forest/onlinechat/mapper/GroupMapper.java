@@ -14,4 +14,6 @@ public interface GroupMapper {
     List<GroupChat> selectGroupById(Integer groupId);
 
 
+//    @Select("insert into group_chats()")
+//    void add(Integer userId, Integer id);
 }

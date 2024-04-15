@@ -15,7 +15,7 @@ public interface UserMapper {
     User login(@Param("email") String email,@Param("password") String password);
 
     @Insert("insert into online_chat.users(nickname,email,password,created_user,created_time,upde_time) values(#{nickName},#{email},#{password},0,now(),now())")
-    Integer register(String nickName, String email, String password);
+    Integer register(@Param("nickName") String nickName, @Param("email") String email, @Param("password") String password);
 
     @Select("select users.id from users where email = #{email}")
     User selectByEmail(String email);
