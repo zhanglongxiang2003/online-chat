@@ -1,0 +1,79 @@
+{
+  "id": "4468972",
+  "name": "聊天",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4784091",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "3706721",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "4397455",
+      "name": "电话",
+      "font_class": "phone",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "16136937",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "24847116",
+      "name": "信息",
+      "font_class": "xinxi1",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "6366918",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "705699",
+      "name": "指南针",
+      "font_class": "zhinanzhen",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "1819062",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "6337465",
+      "name": "笑脸",
+      "font_class": "xiaolian",
+      "unicode": "ec80",
+      "unicode_decimal": 60544
+    },
+    {
+      "icon_id": "24014372",
+      "name": "文件夹",
+      "font_class": "wenjianjia",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}

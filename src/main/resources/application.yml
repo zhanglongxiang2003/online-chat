@@ -1,0 +1,37 @@
+server:
+  port: 9098
+spring:
+  application:
+    name: onlineChat]
+  #数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/online_chat
+    username: root
+    password: 123456
+  #邮箱服务配置
+  mail:
+    host: smtp.163.com
+    username: forest_2021@163.com
+    password: QAENPGXQPWYMPCFW
+  #Redis缓存
+  data:
+    redis:
+      port: 6379  # Redis服务器的端口号
+      password:   # Redis服务器的密码（如果有的话）
+      database: 0 # Redis数据库的索引（默认为0）
+      lettuce:
+        pool:
+          max-active: 8  # Lettuce连接池的最大活动连接数
+          max-idle: 8    # Lettuce连接池的最大空闲连接数
+          min-idle: 0    # Lettuce连接池的最小空闲连接数
+          max-wait: -1ms # Lettuce连接池的最大等待时间
+      jedis:
+        pool:
+          max-active: 8  # Jedis连接池的最大活动连接数
+          max-idle: 8    # Jedis连接池的最大空闲连接数
+          min-idle: 0    # Jedis连接池的最小空闲连接数
+          max-wait: -1ms # Jedis连接池的最大等待时间
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰转换
