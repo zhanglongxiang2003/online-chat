@@ -69,13 +69,14 @@ function sendCode() {
 //注册账号
 function toRegister() {
     register(form.value).then(res => {
-        if (res.code === 200) {
+        if (res.data.code === 200) {
             ElMessage.success("注册成功！")
-        } else {
-            ElMessage.error(res.data)
+        }
+        if (res.data.code === 400) {
+            ElMessage.error(res.data.data)
         }
     }).catch(err => {
-        ElMessage.error("注册失败！" + err.message)
+        ElMessage.error("注册失败！" + err.data)
     })
 }
 
@@ -115,7 +116,7 @@ function toRegister() {
                 <div class="pic-valid-code" id="pic-valid-code">
                     <el-button type="primary" @click.prevend="sendCode"
                         :disabled="form.email.length === 0 || sendButtonDisabled" link>{{
-                    sendButtonText }}</el-button>
+                            sendButtonText }}</el-button>
                 </div>
                 <!-- <img class="pic-valid-code" src="http://8.140.184.12:8101/auth/api/valid-code/code" id="pic-valid-code"> -->
                 <input class="logininput" type="password" v-model="form.password" placeholder="密码" id="registry-pwd">
